@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>In-Situ Slum Development Form</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/material.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/material.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/InSitu.css">
+    <script>
+        $(document).ready(function() {
+           $('select').material_select();
+        });
+     </script>
+  </head>
+  <body>
+      <nav class="inSituHead">
+        <div class="nav-wrapper">
+          <p class="brand">In-Situ Slum Redevelopment Application</p >
+          </ul>
+        </div>
+      </nav>
+      <form name="inSitu" class="inSituForm">
+        <div class="col row-1">
+          <div class="row input-field s6 frm2">
+            <select name="stateName">
+                <option value="">Select State</option>
+                <option value="01">ANDAMAN AND NICOBAR</option>
+                <option value="02">ANDHRA PRADESH</option>
+                <option value="03">ARUNACHAL PRADESH</option>
+            </select>
+          </div>
+          <div class="row input-field s6 frm2 state2">
+              <select name="cityName">
+                  <option value="">Select City</option>
+                  <option value="01">ANDAMAN AND NICOBAR</option>
+                  <option value="02">ANDHRA PRADESH</option>
+                  <option value="03">ARUNACHAL PRADESH</option>
+              </select>
+          </div>
+        </div>    
+        <div class="row">
+            <div class="input-field col s8 slumName">
+              <input name="slumName" id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Name of Slum</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s8 slumName">
+              <input name="projectName" id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Project Name</label>
+            </div>
+        </div>
+        <div>   <!-- THIS DIVISION IS ONLY FOR PROJECT CODE -->
+          <p class="row-2">Project Code:</p>
+          <div class="projectCode">
+            <div style="width:120px"  class="row input-field s6 frm2 proCode">
+              <select name="stateName">
+                  <option value="">Select State</option>
+                  <option value="01">XYZ</option>
+                  <option value="02">PQR</option>
+                  <option value="03">LMN</option>
+              </select>
+            </div>
+            <div style="width:100px"  class="col input-field s6 frm2 proCode">
+                <select class="newFont" name="cityName">
+                    <option value="">City</option>
+                    <option value="01">XYZ</option>
+                    <option value="02">PQR</option>
+                    <option value="03">LMN</option>
+                </select>
+            </div>
+            <div style="width:130px" class="row number">
+              <div class="input-field col proName">
+                <input name="projectName" id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Number</label>
+              </div>
+            </div>
+            <div style="width:130px" class="row input-field s6 frm2 proCode">
+                <select name="stateName">
+                    <option value="">Type</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="03">4</option>
+                </select>
+            </div>
+            <div style="margin-left: 30px; width:130px" class="row input-field s6 frm2 proCode">
+              <select name="stateName">
+                  <option value="">State</option>
+                  <option value="01">New</option>
+                  <option value="02">Revised</option>
+              </select>
+            </div>
+            <div style="margin-left: 30px; width:130px" class="row input-field s6 frm2 proCode">
+              <select name="stateName">
+                  <option value="">Running Number</option>
+                  <option value="01">0</option>
+                  <option value="02">1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    </form>        
+  </body>
+</html>
